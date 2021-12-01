@@ -1,5 +1,17 @@
-const fn = (v: boolean) => v ? 1 : 2
 
-type A = typeof fn
 
-const a: A = () => 1
+function getProperty<T, K extends keyof T>(o: T, name: K): T[K] {
+  return o[name]
+}
+
+const obj = {
+  a: "zhang",
+  b: 1
+}
+const obj1 = {
+  a: 1,
+  b: 1
+}
+
+
+getProperty(obj, "a")
