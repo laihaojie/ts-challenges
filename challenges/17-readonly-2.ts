@@ -36,18 +36,14 @@
 
 
 /* _____________ 你的代码 _____________ */
-type MyPick<T, K extends keyof T> = {
-  [key in K]: T[key]
-}
 
-
-type MyReadonly2<T, K extends keyof T> = {
-  readonly [key in keyof MyPick<T, K>]: T[key]
-}
+type MyReadonly2<T, K extends keyof T = keyof T> = {
+  readonly [P in keyof T]: T[P]
+} & Omit<T, K>
 
 
 /* _____________ 测试用例 _____________ */
-import { Alike, Expect, Equal } from '@type-challenges/utils'
+import { Alike, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Alike<MyReadonly2<Todo1>, Readonly<Todo1>>>,
