@@ -21,7 +21,7 @@ type Awaited<T extends Promise<any>> = T extends Promise<infer R> ? R : never
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect } from '../utils'
+import { Equal, Expect } from '@type-challenges/utils'
 
 type X = Promise<string>
 type Y = Promise<{ field: number }>

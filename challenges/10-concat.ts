@@ -23,7 +23,7 @@ type Concat<T extends readonly any[], U extends readonly any[]> = [...T, ...U]
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect } from '../utils'
+import { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<Concat<[], []>, []>>,

@@ -29,7 +29,7 @@ type TupleToObject<T extends readonly string[]> = {
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect } from '../utils'
+import { Equal, Expect } from '@type-challenges/utils'
 
 const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
 

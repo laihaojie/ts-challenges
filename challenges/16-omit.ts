@@ -38,7 +38,7 @@ type MyOmit<T, K extends keyof T> = {
 }
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect } from '../utils'
+import { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<Expected1, MyOmit<Todo, 'description'>>>,

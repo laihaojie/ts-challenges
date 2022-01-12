@@ -47,7 +47,7 @@ type MyReadonly2<T, K extends keyof T> = {
 
 
 /* _____________ 测试用例 _____________ */
-import { Alike, Expect, Equal } from '../utils'
+import { Alike, Expect, Equal } from '@type-challenges/utils'
 
 type cases = [
   Expect<Alike<MyReadonly2<Todo1>, Readonly<Todo1>>>,

@@ -24,7 +24,7 @@ type If<C extends boolean, T, F> = C extends true ? T : F
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect } from '../utils'
+import { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<If<true, 'a', 'b'>, 'a'>>,

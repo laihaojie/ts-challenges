@@ -29,7 +29,7 @@ type First<T extends any[]> = T['length'] extends 0 ? never : T[0]
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect } from '../utils'
+import { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<First<[3, 2, 1]>, 3>>,

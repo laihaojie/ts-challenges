@@ -17,7 +17,7 @@ type MyParameters<T extends (...args: any[]) => any> = T extends (...args: infer
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect, ExpectFalse, NotEqual } from '../utils'
+import { Equal, Expect, ExpectFalse, NotEqual } from '@type-challenges/utils'
 
 const foo = (arg1: string, arg2: number): void => { }
 const bar = (arg1: boolean, arg2: { a: 'A' }): void => { }

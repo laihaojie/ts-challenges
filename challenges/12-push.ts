@@ -23,7 +23,7 @@ type Push<T extends readonly any[], U> = [...T, U]
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect, ExpectFalse, NotEqual } from '../utils'
+import { Equal, Expect, ExpectFalse, NotEqual } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<Push<[], 1>, [1]>>,

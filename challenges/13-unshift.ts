@@ -23,7 +23,7 @@ type Unshift<T extends readonly any[], U> = [U, ...T]
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect, ExpectFalse, NotEqual } from '../utils'
+import { Equal, Expect, ExpectFalse, NotEqual } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<Unshift<[], 1>, [1]>>,

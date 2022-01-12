@@ -42,7 +42,7 @@ type MyReadonly<T> = {
 
 
 /* _____________ 测试用例 _____________ */
-import { Equal, Expect } from '../utils'
+import { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>,
