@@ -31,8 +31,8 @@
 
 
 /* _____________ 你的代码 _____________ */
-
-type LookUp<U, T> = U extends Record<'type', T> ? { [P in keyof U]: U[P] } : never
+type LookUp<U, T> = U extends { type: string } ? T extends U['type'] ? U : never : never;
+// type LookUp<U, T> = U extends Record<'type', T> ? { [P in keyof U]: U[P] } : never
 // type LookUp<U, T extends (U extends { type: infer K } ? K : never)> = U extends { type: T } ? U : never;
 
 
