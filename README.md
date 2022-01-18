@@ -8,4 +8,6 @@
  17-MyReadonly2
  20-medium-chainable-options
  23-medium-promise-all
+ 26-medium-trim
+ 27-medium-capitalize
 ```
