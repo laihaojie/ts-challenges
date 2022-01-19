@@ -10,4 +10,5 @@
  23-medium-promise-all
  26-medium-trim
  27-medium-capitalize
+ 28-medium-replace
 ```
