@@ -1,8 +1,10 @@
 # 说明
+
 这是我根据 [type-challenges](https://github.com/type-challenges/type-challenges/blob/master/README.zh-CN.md) 进行的ts类型练习
 
-# ts-challenges
-```
+## ts-challenges
+
+```text
  11-includes
  16-omit
  17-MyReadonly2
