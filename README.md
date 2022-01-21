@@ -14,4 +14,5 @@
  27-medium-capitalize
  28-medium-replace
  31-medium-permutation
+ 33-medium-flatten
 ```
