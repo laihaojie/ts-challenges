@@ -15,4 +15,6 @@
  28-medium-replace
  31-medium-permutation
  33-medium-flatten
+ 34-medium-append-to-object
+ 35-medium-absolute
 ```
